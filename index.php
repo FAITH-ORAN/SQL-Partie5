@@ -41,21 +41,21 @@ try{
      echo "</pre>";
 
     //exercice 5
-   echo "<h3 style='color:red;'>exercice 5</h3><br>";
+  /* echo "<h3 style='color:red;'>exercice 5</h3><br>";
    $sup="DROP TABLE `ide`";
    $requette=$connexion->prepare($sup);
-   $requette->execute();
+   $requette->execute();*/
    //chargement du fichier ajout.sql est reussi via phpMyAdmin
 
    //exercice 6
    echo "<h3 style='color:red;'>exercice 6</h3><br>";
 
-  /* $requette5=$connexion->prepare("SELECT * FROM ide");
+   $requette5=$connexion->prepare("SELECT * FROM ide WHERE date BETWEEN '2010-01-01' AND '2011-12-31'");
      $requette5->execute();
      $resultat5=$requette5->fetchAll();//on va stocker le résultat dans une variable pour l'afficher facilement,on utilise la méthode fetchAll pour l'affichage
      echo "<pre>";
      print_r($resultat5);
-     echo "</pre>";*///table ide not found car supprimer dans l'exo 5
+     echo "</pre>";
 
 
 
